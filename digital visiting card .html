@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Visiting Card | Aarush Agrawal</title>  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Segoe UI, Arial, sans-serif}
+
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg,#1f4037,#99f2c8);
+      padding:20px;
+    }
+
+    .card{
+      width:360px;
+      background:#ffffff;
+      border-radius:24px;
+      box-shadow:0 25px 60px rgba(0,0,0,0.25);
+      overflow:hidden;
+      text-align:center;
+      position:relative;
+      animation:fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(20px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    .top{
+      background:linear-gradient(135deg,#ff512f,#dd2476);
+      padding:40px 20px 70px;
+      color:#fff;
+    }
+
+    .top h1{
+      font-size:1.8rem;
+      letter-spacing:0.5px;
+    }
+
+    .profile{
+      width:130px;
+      height:130px;
+      border-radius:20px;
+      object-fit:cover;
+      border:5px solid #fff;
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+      margin-top:-65px;
+      background:#eee;
+    }
+
+    .content{
+      padding:20px 25px 30px;
+      color:#333;
+      font-size:0.95rem;
+      line-height:1.6;
+    }
+
+    .label{font-weight:600;color:#dd2476}
+
+    .btn{
+      margin-top:14px;
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:12px;
+      color:#fff;
+      font-weight:700;
+      font-size:1rem;
+      cursor:pointer;
+      transition:0.25s;
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    .whatsapp{
+      background:linear-gradient(135deg,#25D366,#128C7E);
+    }
+
+    .call{
+      background:linear-gradient(135deg,#ff9966,#ff5e62);
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .footer{
+      font-size:0.8rem;
+      color:#888;
+      margin-top:12px;
+    }
+
+  </style></head>
+<body>  <div class="card">
+    <div class="top">
+      <h1>Aarush Agrawal</h1>
+    </div><img class="profile" src="https://i.ibb.co/nN4fSX2C/file-00000000d17c51f79c53a236bcdc6f64-conversation-id-67ebe60b-dffc-8007-9c77-69340d88373b-message-i.png" alt="profile">
+
+<div class="content">
+  <p><span class="label">Address:</span><br>
+  In front of Punjab garden, MG Road, Ambikapur</p>
+
+  <p><span class="label">Contact:</span> 9238452041</p>
+  <p><span class="label">WhatsApp:</span> 9238444024</p>
+  <p><span class="label">Email:</span><br> aarushagrawal502@gmail.com</p>
+
+  <!-- WhatsApp Button with Pre-written Message -->
+  <a class="btn whatsapp" 
+     href="https://wa.me/919238444024?text=Hello%20I%20come%20here%20through%20your%20digital%20visiting%20card"
+     target="_blank">
+    Click to Add (WhatsApp)
+  </a>
+
+  <!-- Call Button -->
+  <a class="btn call" href="tel:9238452041">
+    Call Now
+  </a>
+
+  <div class="footer">Digital Visiting Card</div>
+</div>
+
+  </div></body>
+</html>
